@@ -1,0 +1,8 @@
+#noteModal {
+    position: absolute;
+    z-index: 500;
+    top:245px;
+    left:660px;
+    display: none;
+
+}

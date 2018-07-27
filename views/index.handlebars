@@ -1,0 +1,31 @@
+<div class="container">
+    <button class="clear-all">Clear All Articles</button>
+
+    {{#each articles}}
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="{{url}}">Link to Article</a>
+            </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title headline">{{headline}}</h5>
+            <p class="card-text summary">{{summary}}</p>
+            <button  class="save-button" type="button" data-id="{{_id}}">Save Article</button>
+        </div>
+        </div>
+    {{/each}}
+</div>
+
+ {{!-- Saved Modal --}}
+ {{!-- <div id="saved modal">
+     <div class="">
+         <h3>Article Saved</h3>
+         <a id="modal-saved" href="/saved">
+            <button class="save-note" type="button">View Saved Articles</button>        
+         </a>
+            <button class="save-note" type="button">OK</button>
+     </div>
+ </div> --}}
